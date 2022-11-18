@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Запросить у пользователя его возраст и определить, кем он 
+является: ребенком (0–2), подростком (12–17), взрослым 
+(18-60) или пенсионером (60– ...).*/
+        /*
+        let yearsOld;
+        yearsOld = prompt('Введите свой возраст')
+        if (yearsOld < 3){
+            alert('ребёнок');
+        }
+        else if(yearsOld > 11 && yearsOld < 18){
+            alert('подросток')
+        }
+        else if(yearsOld >= 18 && yearsOld < 60){
+            alert('взрослый')
+        }
+        else if(yearsOld >= 60){
+            alert('пенсионер')
+        }
+        */
+        /*2. Запросить у пользователя число от 0 до 9 и вывести ему 
+спецсимвол, который расположен на этой клавише (1–!, 
+2–@, 3–# и т. д)*/
+        /*
+        let number;
+        number = parseInt(prompt('введите число от 1 до 9'));
+        switch(number){
+            case 1:
+                alert('!');
+                break;
+            case 2:
+                alert('@');
+                break;
+            case 3:
+                alert('#');
+                break;
+            case 4:
+                alert('$');
+                break;
+            case 5:
+                alert('%');
+                break;
+            case 6:
+                alert('^');
+                break;
+            case 7:
+                alert('&');
+                break;
+            case 8:
+                alert('*');
+                break;
+            case 9:
+                alert('(');
+                break;
+        }
+        */
+        /*3. Запросить у пользователя трехзначное и число и проверить, 
+есть ли в нем одинаковые цифры*/
+        /*
+        let tripleDigits;
+        let number1;
+        let number3;
+        let number2;
+        tripleDigits = prompt('введите трёхзначное число');
+        number2 = (Math.trunc((tripleDigits % 100)/10));
+        number1 = Math.trunc(tripleDigits / 100); 
+        number3 = (tripleDigits % 10);
+        if(number1 == number2){
+            alert('есть одинаковые цифры');
+        }
+        else if(number1 == number2){
+            alert('есть одинаковые цифры');
+        }
+        else if(number2 == number3){
+            alert('есть одинаковые цифры');
+        }
+        else if(number1 == number3){
+            alert('есть одинаковые цифры');
+        }
+        else{
+            alert('нет одинаковых цифр');
+        }
+        */
+        /*4. Запросить у пользователя год и проверить, високосный он 
+или нет. Високосный год либо кратен 400, либо кратен 4 и 
+при этом не кратен 100*/
+        /*
+        let year;
+        year = prompt('введите год');
+        if((year % 400 == 0  || year % 4 == 0) && year % 100 != 0){
+            alert('год високосный');
+        }
+        else{
+            alert('год не високосный')
+        }
+        */
+        /*5. Запросить у пользователя пятиразрядное число и определить,
+является ли оно палиндромом.*/
+        /*
+        let tripleDigits;
+        let number1;
+        let number2;
+        let number3;
+        let number4;
+        let number5;
+        tripleDigits = prompt('введите пятизначное число');
+        number1 = Math.trunc(tripleDigits / 10000); 
+        number2 = Math.trunc((tripleDigits % 10000)/1000);
+        number3 = Math.trunc((tripleDigits % 1000)/100);
+        number4 = Math.trunc((tripleDigits % 100)/10);
+        number5 = (tripleDigits % 10);
+        if(number1 == number5 && number2 == number4){
+            alert('палиндромом');
+        }
+        else{
+            alert('не палиндромом');
+        }
+        */
+        /*6. Написать конвертор валют. Пользователь вводит количество USD, выбирает,
+         в какую валюту хочет перевести: EUR, UAN или AZN,
+        и получает в ответ соответствующую сумму.*/
+        /*
+        let usb;
+        let valuta;
+        usb = prompt('введите количество USD');
+        valuta = +(prompt('выберети в какую валюту хотите перевести (EUR - 1, UAN - 2, AZN - 3'));
+        switch(valuta){
+            case 1:
+                 alert(usb);
+                 break;
+            case 2: usb = usb * 36,7170;
+                 alert(usb);
+                 break;
+            case 3: usb = usb * 1,7;
+                 alert(usb);
+                 break;
+        }
+        */
+        /*7. Запросить у пользователя сумму покупки и вывести сумму 
+к оплате со скидкой: от 200 до 300 – скидка будет 3%, от 300 
+до 500 – 5%, от 500 и выше – 7%. */
+        /*
+        let summu;
+        summu = prompt('введите сумму покупки:');
+        if (summu > 200 && summu < 300){
+            summu =summu - summu / 100 * 3;
+            alert(summu);
+        }
+        else if(summu > 300 && summu < 500) {
+            summu =summu - summu / 100 * 5;
+            alert(summu);
+        }
+        else if(summu > 500 ) {
+            summu =summu - summu / 100 * 7;
+            alert(summu);
+        }
+         */
+         /*8. Запросить у пользователя длину окружности и периметр 
+квадрата. Определить, может ли такая окружность поместиться в указанный квадрат. */
+        /*
+        let dlinaOkr = prompt('введите длину окружномти');//длина окружности = 2пR
+        let perimetr = prompt('введите периметр квадрата');//периметр = 4 * сторона
+        dlinaOkr = dlinaOkr / 3.14;
+        perimetr = perimetr / 4;
+        if (perimetr > dlinaOkr){
+            alert('окружность поместиться в указанный квадрат');
+        }
+        else{
+            alert('окружность не поместиться в указанный квадрат');
+        }
+        */
+        /*9. Задать пользователю 3 вопроса, в каждом вопросе по 3 варианта ответа. За каждый правильный ответ начисляется 2 
+балла. После вопросов выведите пользователю количество 
+набранных баллов.*/
+        /*
+        let firstQuestion;
+        let secondQuestion;
+        let threeQuestion;
+        let score = 0;
+        firstQuestion = prompt('на сколько процентов человек состоит из воды. варианты ответа 70 / 60 / 90');
+        if(firstQuestion == 60){
+            score = score + 2;
+        }
+        secondQuestion = prompt('сколько месяцев в году. варианты ответа 12 / 13 / 3');
+        if(secondQuestion == 12){
+            score = score + 2;
+        }
+        threeQuestion = prompt('какой по счёту этот вопрос. варианты ответа 12 / 13 / 3');
+        if(threeQuestion == 3){
+            score = score + 2;
+        }
+        alert('набранные баллы: ' + score );
+        */
+       /*10. Запросить дату (день, месяц, год) и вывести следующую 
+за ней дату. Учтите возможность перехода на следующий 
+месяц, год, а также високосный год. */
+        /*
+        let day = +prompt('введите день');
+        let monse = prompt('введите месяц');
+        let year = +prompt('введите год');
+        if( day == 28 &&  monse == 'февраль' && (year % 4 != 0 || year % 400 != 0) && year % 100 == 0  ){
+            day = 1;
+            monse = 'марта';
+        }
+        else if( day == 28 &&  monse == 'февраль' && (year % 4 == 0 || year % 400 == 0) && year % 100 != 0){
+            day = day + 1;
+        }
+        else if(day < 30){
+            day = day + 1;
+        }
+        else if ( day == 31 && monse == 'декабрь'){
+            day = 1;
+            monse = 'январь';
+            year = year + 1;
+        }
+        else if ((monse == 'апрель' || monse == 'июнь' || monse ==  'сентябрь' || monse ==  'ноябрь') && day == 30 ){
+            if(monse == 'апрель'){
+                day = 1;
+                monse = 'май';
+            }
+            else if(monse == 'июнь'){
+                day = 1;
+                monse = 'июль';
+            }
+            else if(monse == 'сентябрь'){
+                day = 1;
+                monse = 'октябрь';
+            }
+            else if(monse == 'ноябрь'){
+                day = 1;
+                monse = 'декабрь';
+            }
+        }
+         else{
+            switch(monse){
+                case 'январь': 
+                    monse = 'февраль';
+                    break;
+                case 'февраль': 
+                    monse = 'март';
+                    break;
+                case 'март': 
+                    monse = 'апрель';
+                    break;
+                case 'май': 
+                    monse = 'июнь';
+                    break;
+                case 'июль': 
+                    monse = 'август';
+                    break;
+                case 'август': 
+                    monse = 'сентябрь';
+                    break;
+                case 'октябрь': 
+                    monse = 'ноябрь';
+                    break;
+            }
+        }
+        console.log(day);
+        console.log(monse);
+        console.log(year);
+        */
+    </script>
+</body>
+</html>
